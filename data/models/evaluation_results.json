@@ -1,0 +1,158 @@
+{
+  "1h": {
+    "best_model": "LightGBM",
+    "metrics": {
+      "persistence": {
+        "MAE": 5.12,
+        "RMSE": 9.62,
+        "R2": 0.486,
+        "WAPE%": 26.47
+      },
+      "rolling_24h": {
+        "MAE": 6.59,
+        "RMSE": 11.15,
+        "R2": 0.31,
+        "WAPE%": 34.05
+      },
+      "lightgbm": {
+        "MAE": 5.97,
+        "RMSE": 10.34,
+        "R2": 0.406,
+        "WAPE%": 30.85
+      },
+      "xgboost": {
+        "MAE": 6.08,
+        "RMSE": 10.59,
+        "R2": 0.377,
+        "WAPE%": 31.42
+      }
+    },
+    "improvement_pct_over_baseline": -16.6,
+    "top_features": [
+      [
+        "pm25_lag_24h",
+        588
+      ],
+      [
+        "pm25_roll_mean_24h",
+        453
+      ],
+      [
+        "pm25_diff_24h",
+        387
+      ],
+      [
+        "temperature_2m",
+        375
+      ],
+      [
+        "pm25_lag_1h",
+        370
+      ]
+    ]
+  },
+  "6h": {
+    "best_model": "XGBoost",
+    "metrics": {
+      "persistence": {
+        "MAE": 10.58,
+        "RMSE": 16.84,
+        "R2": -0.519,
+        "WAPE%": 53.29
+      },
+      "rolling_24h": {
+        "MAE": 6.83,
+        "RMSE": 11.67,
+        "R2": 0.271,
+        "WAPE%": 34.41
+      },
+      "lightgbm": {
+        "MAE": 6.64,
+        "RMSE": 10.91,
+        "R2": 0.362,
+        "WAPE%": 33.43
+      },
+      "xgboost": {
+        "MAE": 6.62,
+        "RMSE": 10.82,
+        "R2": 0.373,
+        "WAPE%": 33.34
+      }
+    },
+    "improvement_pct_over_baseline": 37.2,
+    "top_features": [
+      [
+        "pm25_roll_mean_24h",
+        476
+      ],
+      [
+        "direct_radiation",
+        416
+      ],
+      [
+        "surface_pressure",
+        337
+      ],
+      [
+        "hour_cos",
+        313
+      ],
+      [
+        "lon",
+        291
+      ]
+    ]
+  },
+  "24h": {
+    "best_model": "LightGBM",
+    "metrics": {
+      "persistence": {
+        "MAE": 7.34,
+        "RMSE": 13.55,
+        "R2": 0.02,
+        "WAPE%": 37.06
+      },
+      "rolling_24h": {
+        "MAE": 6.91,
+        "RMSE": 12.1,
+        "R2": 0.219,
+        "WAPE%": 34.89
+      },
+      "lightgbm": {
+        "MAE": 6.12,
+        "RMSE": 10.94,
+        "R2": 0.361,
+        "WAPE%": 30.88
+      },
+      "xgboost": {
+        "MAE": 6.13,
+        "RMSE": 11.15,
+        "R2": 0.337,
+        "WAPE%": 30.97
+      }
+    },
+    "improvement_pct_over_baseline": 16.6,
+    "top_features": [
+      [
+        "pm25_roll_mean_24h",
+        463
+      ],
+      [
+        "pm25_lag_24h",
+        418
+      ],
+      [
+        "pm25_diff_1h",
+        372
+      ],
+      [
+        "pm25_lag_12h",
+        352
+      ],
+      [
+        "wind_direction_10m",
+        338
+      ]
+    ]
+  }
+}
